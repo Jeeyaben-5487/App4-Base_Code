@@ -106,6 +106,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>//Added the title page introducing the app and inserting the disclaimer</script>
 
+<!--End of introduction page-->
+
+
 
 <!--Inserting page and question 1-->
 
@@ -123,6 +126,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>//Question 1 and buttons added</script>
 <script>//Answer choice changed so it is not "yes" and "no"</script>
 
+<!--End of page 1-->
+
 
 
 <!--Inserting page and question 2-->
@@ -139,6 +144,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		</div>
 
 <script>//Question 2 and buttons added</script>
+
+<!--End of page 2-->
 
 
 
@@ -158,6 +165,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>//Question 3 and buttons added</script>
 
+<!--End of page 3-->
+
 
 
 <!--Inserting page and question 4-->
@@ -169,13 +178,32 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Do you see shells or small feces in your bed?</p>
-				<a href="#four" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a>
-					<a href="#four" onclick="spiderAdd();" class="w3-btn w3-green">No</a>
+				<a href="#five" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a>
+					<a href="#five" onclick="spiderAdd();" class="w3-btn w3-green">No</a>
 		</div>
 
 
 <script>//Question 4 and buttons added</script>
 
+<!--End of page 4-->
+
+
+
+<!--Start of results page and end of questions->
+
+<div class= "page" id=five">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>That is the end of the questionnaire thank you for participating</h1>
+	</div>
+
+		<div id="content" class="w3-container">
+			<p>Click below for results</p>
+				<button class="w3-btn w3-indigo" onclick="result();"> Results </button>
+					<p id="result"></p>
+		</div>
+</div>
+
+<script>//Adding results page with some additional text</script>
 
 
 <footer class="w3-button w3-container w3-falt-carrot">
