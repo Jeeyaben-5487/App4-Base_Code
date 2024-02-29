@@ -41,18 +41,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var bedbug_count =0;
 	var spider_count =0;
 
+
+
 	function bedbugAdd(){ 	
 		bedbug_count = bedbug_count + 1;
-			//code will increase bedbug count whenever approriate button is clicked
 	}
+//code will increase bedbug count whenever approriate button is clicked
 
 	
+
 	function spiderAdd(){
 		spider_count = spider_count +1;
-			//code will increase spider count whenever approriate button is clicked
 	}
+//code will increase spider count whenever approriate button is clicked
 
 	
+
 	function result(){
 		var bedbugPercent = (bedbug_count/4)*100; 
 			//adding equation to calculate final percentage of bugbite 
@@ -122,10 +126,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 
 		<div id="content" class="w3-container">
-			<p>Do you have one bite or a series of bite?</p>
-				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a> 
-					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-green">No</a> 
+			<p>Do you have one bite or a series of bites?</p>
+				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Series</a> 
+					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-green">One</a> 
 		</div>
+
+</div>
 
 <script>//Question 1 and buttons added</script>
 <script>//Answer choice changed so it is not "yes" and "no"</script>
@@ -147,6 +153,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 					<a href="#three" onclick="spiderAdd();" class="w3-btn w3-green">No</a>
 		</div>
 
+</div>
+
 <script>//Question 2 and buttons added</script>
 
 <!--End of page 2-->
@@ -166,6 +174,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 					<a href="#four" onclick="bedbugAdd();" class="w3-btn w3-green">No</a>
 		</div>
 
+</div>
 
 <script>//Question 3 and buttons added</script>
 
@@ -186,6 +195,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 					<a href="#five" onclick="spiderAdd();" class="w3-btn w3-green">No</a>
 		</div>
 
+</div>
+
 
 <script>//Question 4 and buttons added</script>
 
@@ -204,6 +215,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			<button class="w3-btn w3-indigo" onclick="result();"> Results </button>
 			<p id="result"></p>
 		</div>
+
 </div>
 
 <script>//Adding results page with some additional text</script>
