@@ -45,6 +45,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	function bedbugAdd(){ 	
 		bedbug_count = bedbug_count + 1;
+
 	}
 //code will increase bedbug count whenever approriate button is clicked
 
@@ -52,6 +53,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	function spiderAdd(){
 		spider_count = spider_count +1;
+
 	}
 //code will increase spider count whenever approriate button is clicked
 
@@ -62,7 +64,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			//adding equation to calculate final percentage of bugbite 
 		var spiderPercent = (spider_count/4)*100; 
 			//adding equation to calculate final percentage of spider bite  
-		var result = document.getElementById("five");
+		var result = document.getElementById("result");
 		result.innerHTML = "Probability it is a bedbug bite=" + bedbugPercent + "<br> Probability it is a spider bite =" + spiderPercent;
 	}
 
