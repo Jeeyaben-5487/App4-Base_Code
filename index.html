@@ -99,7 +99,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!-- Start of questionnaire -->
 
 <body>
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-green-sea">
 		<h1>Is it a bedbug bite or a spider bite?</h1>
 	</div>
 
@@ -108,11 +108,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 			 <a href="#one" class="w3-btn w3-indigo w3-round"> Get Started </a>
 
+				<img src="img_chania.jpg" alt="Flowers">
+
 				<p>The following code The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
 
-					<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+<style>
+	p {color:red;}
+</style>
 
-						<p>If you are experiencing any diffculties please consult a doctor.</p>
+					<b>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</b>
+
+
+						<b>IF YOU ARE EXPERIENCING ANY DIFFCULTIES PLEASE CONSULT A DOCTOR.</b>
 
 <script>//Added the title page introducing the app and inserting the disclaimer</script>
 
@@ -123,14 +130,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--Inserting page and question 1-->
 
 <div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-wet-asphalt">
 		<h1>Question 1</h1>
 	</div>
 
 		<div id="content" class="w3-container">
 			<p>Do you have one bite or a series of bites?</p>
-				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Series</a> 
-					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-green">One</a> 
+				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-purple">Series</a> 
+					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-teal">One</a> 
 		</div>
 
 </div>
@@ -145,14 +152,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--Inserting page and question 2-->
 
 <div class="page" id="two">
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-midnight-blue">
 		<h1>Question 2</h1>
 	</div>
 
 		<div id="content" class="w3-container">
 			<p>Is the bite hard when you touch it?</p>
 				<a href="#three" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a>
-					<a href="#three" onclick="spiderAdd();" class="w3-btn w3-green">No</a>
+					<a href="#three" onclick="spiderAdd();" class="w3-btn w3-red">No</a>
 		</div>
 
 </div>
@@ -166,14 +173,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--Inserting page and question 3-->
 
 <div class="page" id="three">
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-belize-hole">
 		<h1>Question 3</h1>
 	</div>
 
 		<div id="content" class="w3-container">
 			<p>Do you have two small punctures near the red bump on your skin?</p>
 				<a href="#four" onclick="spiderAdd();" class="w3-btn w3-green">Yes</a>
-					<a href="#four" onclick="bedbugAdd();" class="w3-btn w3-green">No</a>
+					<a href="#four" onclick="bedbugAdd();" class="w3-btn w3-red">No</a>
 		</div>
 
 </div>
@@ -194,7 +201,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<div id="content" class="w3-container">
 			<p>Do you see shells or small feces in your bed?</p>
 				<a href="#five" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a>
-					<a href="#five" onclick="spiderAdd();" class="w3-btn w3-green">No</a>
+					<a href="#five" onclick="spiderAdd();" class="w3-btn w3-red">No</a>
 		</div>
 
 </div>
