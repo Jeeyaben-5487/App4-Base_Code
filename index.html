@@ -30,7 +30,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <head> 
 	<title>Hello World</title>  
-]	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="w3.css">
 	<link rel="stylesheet" href="w3-colors-flat.css">
@@ -76,7 +76,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Find out if you have bedbug bites or spider bites after completing a small questionaire.</p>
 
-			 <a href="one" class="w3-btn w3-indigo w3-round"> Get Started </a>
+			 <a href="#one" class="w3-btn w3-indigo w3-round"> Get Started </a>
 
 				<p>The following code The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
 
@@ -85,6 +85,24 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 						<p>If you are experiencing any diffculties please consult a doctor.</p>
 
 <script>//Add the title/first page introducing the app and inserting the disclaimer.</script>
+
+<!--Inserting page and question 1-->
+
+<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1>
+	</div>
+
+		<div id="content" class="w3-container">
+			<p>Do you have one bite or a series of bite?</p>
+				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Series</a>
+					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-green">One</a>
+		</div>
+
+<script>//Question 1 and buttons inserted</script>
+
+<footer class="w3-button w3-container w3-falt-carrot">
+	<pStay safe out there</p>
 	
 </body>
 </html>
