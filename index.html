@@ -54,10 +54,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	
 	function result(){
-		var bedbugPercent = (bedbug_count/4)*100; //adding equation to calculate final percentage of bugbite 
-			var spiderPercent = (spider_count/4)*100; //adding equation to calculate final percentage of spider bite  
-				var result = document.getElementById("five");
-					result.innerHTML = "Probability it is a bedbug bite=" + bedbugPercent + "<br> Probability it is a spider bite =" + spiderPercent;
+		var bedbugPercent = (bedbug_count/4)*100; 
+			//adding equation to calculate final percentage of bugbite 
+		var spiderPercent = (spider_count/4)*100; 
+			//adding equation to calculate final percentage of spider bite  
+		var result = document.getElementById("five");
+		result.innerHTML = "Probability it is a bedbug bite=" + bedbugPercent + "<br> Probability it is a spider bite =" + spiderPercent;
 	}
 
 </script>	
@@ -121,8 +123,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Do you have one bite or a series of bite?</p>
-				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Series</a> 
-					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-green">One</a> 
+				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a> 
+					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-green">No</a> 
 		</div>
 
 <script>//Question 1 and buttons added</script>
