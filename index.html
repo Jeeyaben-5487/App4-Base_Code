@@ -38,9 +38,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	Need to add 
+	var bedbug_count =0;
+	var spider_count =0;
+
+	function bedbugAdd(){ 	
+		bedbug_count = bedbug_count + 1;
+			//code will increase bedbug count whenever approriate button is clicked
+		}
+
+	function spiderAdd(){
+		spider_count = spider_count +1;
+			//code will increase spider count whenever approriate button is clicked
+		}
+
+	function result(){
+		var bedbugPercent = (bedbug_count/4)*100; //adding equation to calculate final percentage of bugbite 
+			var spiderPercent = (spider_count/4)*100; //adding equation to calculate final percentage of spider bite  
+				var result = document.getElementById("five");
+					result.innerHTML = "Probability it is a bedbug bite=" + bedbugPercent + "<br> Probability it is a spider bite =" + spiderPercent;
+	{
 
 </script>	
+
+<script>//Adding results function in order to display result percentages on last page</script>
 
 
 <!-- THIS STYLE CODE HELPS MAKE YOUR APP LOOK GOOD. PROBABLY DONT MESS WITH IT -->
@@ -95,11 +115,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Do you have one bite or a series of bite?</p>
-				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Series</a>
-					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-green">One</a>
+				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Series</a> 
+					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-green">One</a> //Answer choice changed so it is not "yes" and "no" 
 		</div>
 
 <script>//Question 1 and buttons inserted</script>
+
+
+
+<!--Inserting page and question 2-->
+
+<div class="page" id="two">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 2</h1>
+	</div>
+
+		<div id="content" class="w3-container">
+			<p>Is the bite hard when you touch it?</p>
+				<a href="#three" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a>
+					<a href="#three" onclick="spiderAdd();" class="w3-btn w3-green">No</a>
+		</div>
+
+<script>//Question 2 and buttons inserted</script>
+
 
 <footer class="w3-button w3-container w3-falt-carrot">
 	<pStay safe out there</p>
