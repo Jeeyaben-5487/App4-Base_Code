@@ -44,13 +44,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function bedbugAdd(){ 	
 		bedbug_count = bedbug_count + 1;
 			//code will increase bedbug count whenever approriate button is clicked
-		}
+	}
 
 	
 	function spiderAdd(){
 		spider_count = spider_count +1;
 			//code will increase spider count whenever approriate button is clicked
-		}
+	}
 
 	
 	function result(){
@@ -58,7 +58,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			var spiderPercent = (spider_count/4)*100; //adding equation to calculate final percentage of spider bite  
 				var result = document.getElementById("five");
 					result.innerHTML = "Probability it is a bedbug bite=" + bedbugPercent + "<br> Probability it is a spider bite =" + spiderPercent;
-	{
+	}
 
 </script>	
 
@@ -199,9 +199,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 
 		<div id="content" class="w3-container">
-			<p>Click below for results</p>
-				<button class="w3-btn w3-indigo" onclick="result();"> Results </button>
-					<p id="result"></p>
+			<button class="w3-btn w3-indigo" onclick="result();"> Results </button>
+			<p id="result"></p>
 		</div>
 </div>
 
