@@ -20,8 +20,7 @@ Brief Description of Goal of Code:
 This app allows the user to differentiate between a bedbug bite and a spider bite through a series of questions and results at the end. This app is not meant to diagnose anything. The web-based app is created using JavaScript, CSS, and HTML. 
  
 Known Issues:
-The questionnaire is too short and does not account for any other factors that could contribite to an illness. 
-Ignore this error message if you see it using the javaScript console: Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
+The questionnaire is too short and does not account for any other factors that could contribite to an illness. Questions have binary answers and cannot properly describe symptoms. 
 
 References:
 https://www.w3schools.com/w3css/default.asp
@@ -111,6 +110,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 				<a href="#one" class="w3-btn w3-indigo w3-round"> Get Started </a>
+				<script>//button that directs to first page</script>
 
 					<img src="https://www.shutterstock.com/image-vector/cute-spider-cartoon-vector-illustration-600nw-2274794349.jpg" alt="Spider Drawing" width="150" height="150">
 <script>//Added picture of spider</script>
@@ -139,8 +139,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Do you have one bite or a series of bites?</p>
-				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Multiple bites</a> 
-					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-red">One bite</a> 
+				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Multiple bites</a> <script>//button for bedbug and next page</script>
+					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-red">One bite</a> <script>//button for spider and next page</script>
 		</div>
 
 </div>
@@ -163,8 +163,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Does the bump on your skin feel hard when you touch it?</p>
-				<a href="#three" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a>
-					<a href="#three" onclick="spiderAdd();" class="w3-btn w3-red">No</a>
+				<a href="#three" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a> <script>//button for bedbug and next page</script>
+					<a href="#three" onclick="spiderAdd();" class="w3-btn w3-red">No</a> <script>//button for spider and next page</script>
 		</div>
 
 </div>
@@ -185,8 +185,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Do you have two small punctures near the bump on your skin?</p>
-				<a href="#four" onclick="spiderAdd();" class="w3-btn w3-green">Yes</a>
-					<a href="#four" onclick="bedbugAdd();" class="w3-btn w3-red">No</a>
+				<a href="#four" onclick="spiderAdd();" class="w3-btn w3-green">Yes</a> <script>//button for spider and next page</script>
+					<a href="#four" onclick="bedbugAdd();" class="w3-btn w3-red">No</a> <script>//button for bedbug and next page</script>
 		</div>
 
 </div>
@@ -207,8 +207,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Do you see shells or small feces in your bed?</p>
-				<a href="#five" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a>
-					<a href="#five" onclick="spiderAdd();" class="w3-btn w3-red">No</a>
+				<a href="#five" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a> <script>//button for bedbug and next page</script>
+					<a href="#five" onclick="spiderAdd();" class="w3-btn w3-red">No</a> <script>//button for spider and next page</script>
 		</div>
 
 </div>
@@ -229,8 +229,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Are you experiencing any other pain besides itchiness? This can include fever, chills, cramping, back pain, and chest pain.</p>
-				<a href="#six" onclick="spiderAdd();" class="w3-btn w3-green">Yes, experiencing one or more</a>
-					<a href="#six" onclick="bedbugAdd();" class="w3-btn w3-red">No, just itchiness</a>
+				<a href="#six" onclick="spiderAdd();" class="w3-btn w3-green">Yes, experiencing one or more</a> <script>//button for spider and next page</script>
+					<a href="#six" onclick="bedbugAdd();" class="w3-btn w3-red">No, just itchiness</a> <script>//button for bedbug and next page</script>
 		</div>
 
 </div>
@@ -253,7 +253,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Thank you for answering! Click below for results.</p>
-			<button class="w3-btn w3-indigo" onclick="result();"> Results </button>
+			<button class="w3-btn w3-indigo" onclick="result();"> Results </button> <script>//button for results</script>
 			<p id="result"></p>
 		</div>
 
@@ -266,10 +266,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <footer class="w3-button w3-container w3-flatmidnight-blue">
-	<pStay safe out there</p>
+	<p Stay safe out there</p>
 
 
-<script>//Changed the color of the footer</script>
+<script>//Changed the color of the footer and adding text</script>
 	
 </body>
 </html>
