@@ -60,11 +60,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 
 	function result(){
-		var bedbugPercent = (bedbug_count/4)*100; 
+		var bedbugPercent = (bedbug_count/5)*100; 
 			//adding equation to calculate final percentage of bugbite 
-		var spiderPercent = (spider_count/4)*100; 
+		var spiderPercent = (spider_count/5)*100; 
 			//adding equation to calculate final percentage of spider bite  
-		var result = document.getElementById("five");
+		var result = document.getElementById("six");
 		result.innerHTML = "Probability it is a bedbug bite=" + bedbugPercent + "<br> Probability it is a spider bite =" + spiderPercent;
 	}
 
@@ -139,8 +139,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<div id="content" class="w3-container">
 			<p>Do you have one bite or a series of bites?</p>
-				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Series</a> 
-					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-red">One</a> 
+				<a href="#two" onclick="bedbugAdd();" class="w3-btn w3-green">Multiple bites</a> 
+					<a href="#two" onclick="spiderAdd();" class="w3-btn w3-red">One bite</a> 
 		</div>
 
 </div>
@@ -162,7 +162,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 
 		<div id="content" class="w3-container">
-			<p>Is the bite hard when you touch it?</p>
+			<p>Does the bump on your skin feel hard when you touch it?</p>
 				<a href="#three" onclick="bedbugAdd();" class="w3-btn w3-green">Yes</a>
 					<a href="#three" onclick="spiderAdd();" class="w3-btn w3-red">No</a>
 		</div>
@@ -184,7 +184,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 
 		<div id="content" class="w3-container">
-			<p>Do you have two small punctures near the red bump on your skin?</p>
+			<p>Do you have two small punctures near the bump on your skin?</p>
 				<a href="#four" onclick="spiderAdd();" class="w3-btn w3-green">Yes</a>
 					<a href="#four" onclick="bedbugAdd();" class="w3-btn w3-red">No</a>
 		</div>
@@ -220,10 +220,33 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--End of page 4-->
 
 
+<!--Inserting page and question 5-->
+
+<div class="page" id="five">
+	<div id="header" class="w3-container w3-flat-midnight-blue">
+		<h1>Question 5</h1>
+	</div>
+
+		<div id="content" class="w3-container">
+			<p>Are you experiencing any other pain besides itchiness? This can include fever, chills, cramping, back pain, and chest pain.</p>
+				<a href="#six" onclick="spiderAdd();" class="w3-btn w3-green">Yes, experiencing one or more</a>
+					<a href="#six" onclick="bedbugAdd();" class="w3-btn w3-red">No, just itchiness</a>
+		</div>
+
+</div>
+
+
+<script>//Question 5 and buttons added</script>
+<script>//Changed the color of the header and buttons</script>
+<script>//Editing text throughout page to make more interactive</script>
+
+<!--End of page 5-->
+
+
 
 <!--Start of results page and end of questions-->
 
-<div class= "page" id="five">
+<div class= "page" id="six">
 	<div id="header" class="w3-container w3-flat-midnight-blue">
 		<h1>End of Qestionnaire</h1>
 	</div>
